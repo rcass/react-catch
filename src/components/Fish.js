@@ -2,10 +2,12 @@ import React from 'react';
 
 class Fish extends React.Component {
   render () {
+    const details = this.props.details;
     return (
-      <div>
-        <p>Fish Component</p>
-      </div>  
+      <li className="menu-fish">
+        <img src={details.image} alt={details.name}/> 
+        {details.name}
+      </li>
     )
   }
 }
